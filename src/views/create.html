@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create city</title>
+  </head>
+  <body>
+    <div>
+      <form action="" method="post">
+        <div>
+          <label>
+            City name
+            <input type="text" required name="city" value="{city}" />
+          </label>
+        </div>
+        <div>
+          <label>
+            Country
+            <select name="country" required>
+              {options}
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>
+            Area
+            <input
+              type="number"
+              name="area"
+              required
+              min="1"
+              step="1"
+              value="{area}"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Population
+            <input
+              type="number"
+              name="population"
+              required
+              min="1"
+              step="1"
+              value="{population}"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            GDP
+            <input
+              type="number"
+              name="gdp"
+              required
+              min="1"
+              step="1"
+              value="{gdp}"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Description
+            <textarea
+              style="resize: none"
+              cols="40"
+              rows="6"
+              name="description"
+              required
+            >
+{description}</textarea
+            >
+          </label>
+        </div>
+        <div>
+          <input type="submit" value="{action} city" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
